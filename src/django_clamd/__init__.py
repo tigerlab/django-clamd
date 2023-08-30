@@ -1,5 +1,3 @@
-
-
 def get_scanner():
     """Lazy get scanner configured scanner when needed"""
     import clamd

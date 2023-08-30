@@ -21,7 +21,7 @@ def validate_file_infection(file):
     scanner = get_scanner()
     try:
         result = scanner.instream(file)
-    except IOError:
+    except OSError:
         # Ping the server if it fails than the server is down
         scanner.ping()
         # Server is up. This means that the file is too big.
